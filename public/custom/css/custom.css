@@ -1,0 +1,132 @@
+.vertical-container {
+    height: 300px;
+    display: -webkit-flex;
+    display:         flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+.align-center {
+    padding: 20px;
+}
+
+.link-btn {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.breadcrumb-link {
+    text-transform: capitalize;
+}
+
+.banner {
+    display: none;
+}
+
+.auth-btn {
+    margin: 10px;
+}
+
+h1.app-name {
+    font-weight: 800;
+}
+
+#main-logo {
+    margin: auto;
+    max-width: 250px;
+    max-height: auto;
+}
+
+#auth-logo {
+    margin: auto;
+    max-width: 75px;
+    max-height: auto;
+}
+
+.bg-main {
+    background: #133783;
+    color: #fff;
+}
+
+#btn-login:active,
+#btn-login:hover {
+    color: #fff;
+}
+
+/* CSS Preloader - START */
+
+.clock{
+    border-radius: 70px;
+    border: 3px solid #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: -50px;
+    display: block;
+    width: 120px;
+    height: 120px;
+}
+
+.clock:after{
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    top: 13px;
+    left: 48%;
+    height: 50px;
+    width: 4px;
+    border-radius: 5px;
+    -webkit-transform-origin: 50% 97%;
+    transform-origin: 50% 97%;
+    -webkit-animation: grdAiguille 2s linear infinite;
+    animation: grdAiguille 2s linear infinite;
+}
+
+@-webkit-keyframes grdAiguille{
+    0%{-webkit-transform:rotate(0deg);}
+    100%{-webkit-transform:rotate(360deg);}
+}
+
+@keyframes grdAiguille{
+    0%{transform:rotate(0deg);}
+    100%{transform:rotate(360deg);}
+}
+
+.clock:before{
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    top: 24px;
+    left: 48%;
+    height: 40px;
+    width: 4px;
+    border-radius: 5px;
+    -webkit-transform-origin: 50% 94%;
+    transform-origin: 50% 94%;
+    -webkit-animation: ptAiguille 12s linear infinite;
+    animation: ptAiguille 12s linear infinite;
+}
+
+@-webkit-keyframes ptAiguille{
+    0%{-webkit-transform:rotate(0deg);}
+    100%{-webkit-transform:rotate(360deg);}
+}
+
+@keyframes ptAiguille{
+    0%{transform:rotate(0deg);}
+    100%{transform:rotate(360deg);}
+}
+
+/* CSS Preloader - END */
